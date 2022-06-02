@@ -13,7 +13,7 @@ function randomInteger(min, max) {
 function makeSerhioRandom() {
     changeSerhio.textContent = '';
     changeSerhio.classList.remove(className);
-    i = randomInteger(1, 49)
+    i = randomInteger(1, 83)
     className = classNameDefault + i;
     changeSerhio.classList.add(className);
 }
