@@ -1,13 +1,14 @@
-# **Проект: "Место".**
+# **Project: "Sergio birthday boy".**
 
-## **Описание проекта:**
-Проект позволяет вести свой профиль в интернете: загружать данные о себе (Аватар, имя, описание), загружать фотографии интересных событий из жизни. На текущем этапе реализован функционал изменения данных о себе - имени и описания.
+## **Project description:**
+This is a birthday greeting card. The header displays the phrase "Happy Birthday!" in different languages. A random photo of the birthday person is displayed in the center of the page. Clicking on it will display the next random photo.
 
-## **Используемые технологии:**
-* В проекте применена адаптивная верстка, сайт отлично выглядит на экранах с большим и маленьким разрешением.
-* Для адаптивной верстки в CSS используются медиазапросы.
-* Для верстки блоков сайта использованы гриды.
-* Функционал открытия формы редактирвоания данных и их сохранения написан на JavaScript. 
+## **Technologies used:**
+* Adaptive layout is used in the project, the site looks great on screens with large and small resolution.
+* Media queries are used for adaptive layout.
+* Flex used for the layout of blocks of the site.
+* Language changing and photo flipping functionality is implemented in JavaScript. 
+* Animation is used in dynamic gradient backgrounds.
 
 ## **Посмотреть проект он-лайн:**
-* [Ссылка на проект](https://dromgard.github.io/mesto/)
+* [Сheck out the project](https://dromgard.github.io/sergio-birthday-boy/)
