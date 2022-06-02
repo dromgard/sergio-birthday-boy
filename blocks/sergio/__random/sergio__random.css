@@ -389,11 +389,11 @@
     background-size: cover;
 }
 
-/*.sergio__common_random_66 {
+.sergio__common_random_66 {
     background: url(../../../images/sergio-66.png);
     background-position: center;
     background-size: cover;
-}*/
+}
 
 .sergio__common_random_67 {
     background: url(../../../images/sergio-67.png);
@@ -493,6 +493,30 @@
 
 .sergio__common_random_83 {
     background: url(../../../images/sergio-83.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.sergio__common_random_84 {
+    background: url(../../../images/sergio-84.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sergio__common_random_85 {
+    background: url(../../../images/sergio-85.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sergio__common_random_86 {
+    background: url(../../../images/sergio-86.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sergio__common_random_87 {
+    background: url(../../../images/sergio-87.png);
     background-position: center;
     background-size: cover;
 }
