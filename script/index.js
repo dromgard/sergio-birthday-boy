@@ -1,5 +1,8 @@
 const changeSerhio = document.querySelector('.sergio__common');
 const sergioCongratulation = document.querySelector('.congratulations__text');
+const buttonAutoplay = document.querySelector('.controls__button_type_autoplay');
+
+let autoplayIntervalID;
 
 let i = 1;
 const classNameDefault = 'sergio__common_random_';
@@ -8,14 +11,6 @@ let className = classNameDefault + i;
 function randomInteger(min, max) {
     let rand = min - 0.5 + Math.random() * (max - min + 1);
     return Math.round(rand);
-}
-
-function makeSerhioRandom() {
-    changeSerhio.textContent = '';
-    changeSerhio.classList.remove(className);
-    i = randomInteger(1, 87)
-    className = classNameDefault + i;
-    changeSerhio.classList.add(className);
 }
 
 function makeCongratulationSpanish() {
@@ -65,4 +60,35 @@ makeCongratulationRandom();
 
 setInterval(makeCongratulationRandom, 24000);
 
+function makeSerhioRandom() {
+    clearInterval(autoplayIntervalID);
+    buttonAutoplay.classList.remove('playing');
+    buttonAutoplay.textContent = 'Autoplay';
+    makeSerhioRandomAutoplay();
+}
+
+function makeSerhioRandomAutoplay() {
+    changeSerhio.textContent = '';
+    changeSerhio.classList.remove(className);
+    i = randomInteger(1, 87)
+    className = classNameDefault + i;
+    changeSerhio.classList.add(className);
+}
+
+function autoPlay() {
+    if (buttonAutoplay.classList.contains('playing') === false) {
+        makeSerhioRandomAutoplay();
+        var intervalID = setInterval(makeSerhioRandomAutoplay, 3000);
+        buttonAutoplay.classList.toggle('playing');
+        buttonAutoplay.textContent = 'Stop Autoplay';
+        autoplayIntervalID = intervalID;
+    } else {
+        clearInterval(autoplayIntervalID);
+        buttonAutoplay.classList.toggle('playing');
+        buttonAutoplay.textContent = 'Autoplay';
+    }
+}
+
 changeSerhio.addEventListener('click', makeSerhioRandom);
+
+buttonAutoplay.addEventListener('click', autoPlay);

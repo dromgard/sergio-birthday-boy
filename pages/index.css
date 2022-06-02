@@ -15,3 +15,7 @@
 @import url(../blocks/sergio/__common/sergio__common.css);
 
 @import url(../blocks/sergio/__random/sergio__random.css);
+
+@import url(../blocks/controls/controls.css);
+
+@import url(../blocks/controls/__button/controls__button.css);
