@@ -1,10 +1,18 @@
 @keyframes background {
-    50% {
-        background: darkviolet;
-        box-shadow: mediumorchid inset,
+    35% {
+        background: rgb(200, 80, 252);
+        box-shadow: rgb(238, 179, 253) inset,
             teal inset,
             plum inset;
     }
+
+    70% {
+        background: rgb(253, 88, 88);
+        box-shadow: rgb(253, 161, 161) inset,
+            teal inset,
+            plum inset;
+    }
+    
 }
 
 .page {
@@ -12,8 +20,8 @@
     max-width: 768px;
     margin: auto;
     height: 100vh;
-    background: crimson;
-    animation: background 4s infinite alternate;
+    background: rgb(252, 108, 144);
+    animation: background 8s infinite alternate;
     font-family: 'Inter', Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;

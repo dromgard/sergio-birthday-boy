@@ -4,8 +4,6 @@ const buttonAutoplay = document.querySelector('.controls__button_type_autoplay')
 const buttonAudioPlay = document.querySelector('.controls__button_type_audio');
 const audioFile = document.querySelector('.audio');
 
-console.log(audioFile)
-
 let autoplayIntervalID;
 
 let i = 1;
@@ -96,8 +94,8 @@ function autoPlay() {
 }
 
 function playAudio() {
-    audioFile.innerHTML = `<audio controls source src="audio/allegrova-happy-birthday.mp3" type="audio/mpeg" class="controls__audio"></audio>`;
-    audioFile.classList.remove('audio__hidden');
+    audioFile.innerHTML = `<audio controls loop source src="audio/allegrova-happy-birthday.mp3" type="audio/mpeg" class="controls__audio"></audio>`;
+    audioFile.classList.remove('audio_hidden');
     buttonAudioPlay.classList.add('controls__button_audio_hidden');
 }
 

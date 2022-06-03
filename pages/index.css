@@ -22,6 +22,6 @@
 
 @import url(../blocks/controls/__button/_audio/controls__button_audio_hidden.css);
 
-@import url(../blocks/audio/audio.css);
+@import url(../blocks/audio/_hidden/audio_hidden.css);
 
-@import url(../blocks/audio/__hidden/audio__hidden.css);
+@import url(../blocks/controls/__audio/controls__audio.css);
