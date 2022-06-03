@@ -9,12 +9,49 @@
     text-align: center;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 90px;
+    line-height: 100px;
     transition: .5s;
     cursor: pointer;
 }
 
 .sergio__common:hover {
-    font-size: 48px;
+    font-size: 95px;
+    line-height: 105px;
+}
+
+@media screen and (max-width: 580px) {
+    .sergio__common {
+        font-size: 75px;
+        line-height: 85px;
+    }
+
+    .sergio__common:hover {
+        font-size: 80px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sergio__common {
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .sergio__common:hover {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .sergio__common {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sergio__common:hover {
+        font-size: 45px;
+        line-height: 55px;
+    }
 }

@@ -1,6 +1,10 @@
 const changeSerhio = document.querySelector('.sergio__common');
 const sergioCongratulation = document.querySelector('.congratulations__text');
 const buttonAutoplay = document.querySelector('.controls__button_type_autoplay');
+const buttonAudioPlay = document.querySelector('.controls__button_type_audio');
+const audioFile = document.querySelector('.audio');
+
+console.log(audioFile)
 
 let autoplayIntervalID;
 
@@ -9,8 +13,9 @@ const classNameDefault = 'sergio__common_random_';
 let className = classNameDefault + i;
 
 function randomInteger(min, max) {
-    let rand = min - 0.5 + Math.random() * (max - min + 1);
-    return Math.round(rand);
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function makeCongratulationSpanish() {
@@ -78,7 +83,7 @@ function makeSerhioRandomAutoplay() {
 function autoPlay() {
     if (buttonAutoplay.classList.contains('playing') === false) {
         makeSerhioRandomAutoplay();
-        var intervalID = setInterval(makeSerhioRandomAutoplay, 3000);
+        var intervalID = setInterval(makeSerhioRandomAutoplay, 2000);
         buttonAutoplay.classList.toggle('playing');
         buttonAutoplay.textContent = 'Stop Autoplay';
         autoplayIntervalID = intervalID;
@@ -86,9 +91,18 @@ function autoPlay() {
         clearInterval(autoplayIntervalID);
         buttonAutoplay.classList.toggle('playing');
         buttonAutoplay.textContent = 'Autoplay';
+        changeSerhio.textContent = 'Press me:)';
     }
+}
+
+function playAudio() {
+    audioFile.innerHTML = `<audio controls source src="audio/allegrova-happy-birthday.mp3" type="audio/mpeg" class="controls__audio"></audio>`;
+    audioFile.classList.remove('audio__hidden');
+    buttonAudioPlay.classList.add('controls__button_audio_hidden');
 }
 
 changeSerhio.addEventListener('click', makeSerhioRandom);
 
 buttonAutoplay.addEventListener('click', autoPlay);
+
+buttonAudioPlay.addEventListener('click', playAudio);

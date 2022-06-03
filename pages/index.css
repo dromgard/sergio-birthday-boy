@@ -19,3 +19,9 @@
 @import url(../blocks/controls/controls.css);
 
 @import url(../blocks/controls/__button/controls__button.css);
+
+@import url(../blocks/controls/__button/_audio/controls__button_audio_hidden.css);
+
+@import url(../blocks/audio/audio.css);
+
+@import url(../blocks/audio/__hidden/audio__hidden.css);
