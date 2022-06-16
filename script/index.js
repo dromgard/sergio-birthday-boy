@@ -94,7 +94,7 @@ function autoPlay() {
 }
 
 function playAudio() {
-    audioFile.innerHTML = `<audio controls loop source src="audio/allegrova-happy-birthday.mp3" type="audio/mpeg" class="controls__audio"></audio>`;
+    audioFile.innerHTML = `<audio controls loop src="audio/allegrova-happy-birthday.mp3" class="controls__audio" autoplay></audio>`;
     audioFile.classList.remove('audio_hidden');
     buttonAudioPlay.classList.add('controls__button_audio_hidden');
 }
