@@ -1,0 +1,29 @@
+{
+  "name": "sergio-birthday-boy",
+  "version": "1.0.0",
+  "description": "Находит страну происхождения по входящему запросу",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.css\" ; npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dromgard/sergio-birthday-boy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dromgard/sergio-birthday-boy/issues"
+  },
+  "homepage": "https://github.com/dromgard/sergio-birthday-boy#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-order": "^5.0.0"
+  }
+}

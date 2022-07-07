@@ -13,6 +13,9 @@
     line-height: 100px;
     transition: .5s;
     cursor: pointer;
+    background: url(../../../images/sergio-2.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .sergio__common:hover {
