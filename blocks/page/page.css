@@ -1,40 +1,27 @@
-@keyframes background {
+@keyframes background-theme {
     0% {
         background: #f8717f;
-            teal inset,
-            plum inset;
     }
 
     20% {
         background: #fabf71;
-            teal inset,
-            plum inset;
     }
 
     40% {
         background: #f8f873;
-            teal inset,
-            plum inset;
     }
 
     60% {
         background: #7fc28b;
-            teal inset,
-            plum inset;
     }
 
     80% {
         background: #7676f3;
-            teal inset,
-            plum inset;
     }
 
     100% {
         background: #8b4987;
-            teal inset,
-            plum inset;
     }
-    
 }
 
 .page {
@@ -42,8 +29,7 @@
     max-width: 768px;
     margin: auto;
     height: 100vh;
-    /*background: #FF0018;*/
-    animation: background 20s infinite alternate;
+    animation: background-theme 20s infinite alternate;
     font-family: 'Inter', Arial, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
