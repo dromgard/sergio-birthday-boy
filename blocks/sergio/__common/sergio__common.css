@@ -5,7 +5,7 @@
     border-radius: 2%;
     border: unset;
     text-transform: uppercase;
-    color: white;
+    color: #ffffff8a;
     text-align: center;
     font-style: normal;
     font-weight: 900;
@@ -13,7 +13,7 @@
     line-height: 100px;
     transition: .5s;
     cursor: pointer;
-    background: url(../../../images/sergio-2.png);
+    background: url(../../../images/sergio-1.jpg);
     background-position: center;
     background-size: cover;
 }

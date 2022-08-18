@@ -39,7 +39,7 @@ function returnCongratulation(array) {
 };
 
 // Запускаем возврат поздравления из массива с интервалом в 3 секунды.
-setInterval(() => returnCongratulation(congratulations), 3000);
+setInterval(returnCongratulation, 3000, congratulations);
 
 // Выдаем случайное число из переданного диапазона. 
 function randomInteger(min, max) {
@@ -62,7 +62,7 @@ function checkSlideShowRunning() {
 // Выдаем случайную фотографию, используя случайное число для формирования имени файла с фото.
 function makeSerhioRandom() {
   serhioPhoto.textContent = '';
-  serhioPhoto.style.backgroundImage = `url('images/sergio-${randomInteger(1, 87)}.png')`;
+  serhioPhoto.style.backgroundImage = `url('images/sergio-${randomInteger(1, 108)}.jpg')`;
 };
 
 // Останавливаем слайдшоу из случайных фотографий
