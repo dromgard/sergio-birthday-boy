@@ -20,6 +20,17 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+  .congratulations__text {
+    line-height: 37px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .congratulations__text {
+    line-height: 30px;
+  }
+}
 
 @media screen and (max-width: 320px) {
     .congratulations__text {
