@@ -62,7 +62,7 @@ function checkSlideShowRunning() {
 // Выдаем случайную фотографию, используя случайное число для формирования имени файла с фото.
 function makeSerhioRandom() {
   serhioPhoto.textContent = '';
-  serhioPhoto.style.backgroundImage = `url('images/sergio-${randomInteger(1, 108)}.jpg')`;
+  serhioPhoto.style.backgroundImage = `url('images/sergio-${randomInteger(1, 192)}.jpg')`;
 };
 
 // Останавливаем слайдшоу из случайных фотографий
